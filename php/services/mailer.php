@@ -23,7 +23,7 @@ class MailerService{
                 $mensaje .= "Su e-mail es: " . $mail . " \r\n";
                 $mensaje .= "Enviado el " . date('d/m/Y', time());
         
-                $for  "mariano.arias12@gmail.com";/*aca va el mail del final user*/ 
+                $for = "mariano.arias12@gmail.com";/*aca va el mail del final user*/ 
         
 
                 mail($for, $asunto, utf8_decode($mensaje), $header);
