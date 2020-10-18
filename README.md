@@ -11,6 +11,8 @@ _Tener instalado XAMPP._
 
 _Almacenar la carpeta clonada del repositorio en XAMPP/htdocs._
 
+_Configurar mailer: [Guía](http://albertotain.blogspot.com/2018/02/como-configurar-xampp-para-enviar.html)._
+
 _Importar la base de datos en phpMyAdmin._
 
 ## Acceso 📦
