@@ -12,7 +12,7 @@
         }
 
         function getPets() {
-            $query = $this->db->prepare();
+            $query = $this->db->prepare('SELECT * FROM pet');
             $query->execute();
             return $query->fetchAll(PDO::FETCH_OBJ);
         }

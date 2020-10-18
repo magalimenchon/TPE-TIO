@@ -6,7 +6,7 @@
 
         function __construct() {
             $host = 'host=localhost;';
-            $dbname = 'dbname=/*NOMBRE DE LA BBDD*/;charset=utf8';
+            $dbname = 'dbname=db_adoptame;charset=utf8';
             $user = 'root';
             $password = '';
             try {
