@@ -19,7 +19,7 @@ class MailerService{
                 $header .= "Mime-Version: 1.0 \r\n";
                 $header .= "Content-Type: text/plain";
         
-                $mensaje = $name . " quiere adoptar a " . $pet . " \r\n";
+                $mensaje = $name . " quiere adoptar a " . $pet . ". Rapido, conmunicate con el para seguir con el proceso "." \r\n";
                 $mensaje .= "Su e-mail es: " . $mail . " \r\n";
                 $mensaje .= "Enviado el " . date('d/m/Y', time());
         
