@@ -42,10 +42,12 @@
                     {$pet->description}: Lorem ipsum dolor sit amet consectetur adipisicing elit. Id expedita corporis deleniti sed pariatur eos nemo quis illo quae vitae dolorem, delectus at cupiditate! Porro voluptatem voluptas possimus saepe sint.
                 </figcaption>
                 
-                <form action="adopt/{$pet->id}" method="get">
+                <form data-id="{$pet->id}" id="adoptForm" method="POST">
                     <input type="text" name="name" placeholder="Your name: " id="">
                     <input type="email" name="email" placeholder="Email: " id="">
-                    <button type="submit" class="js-btn-adopt" data-id="pet-3">Adopt</button></td>
+                    <input type="text" name="pet" value="{$pet->name}">
+                    <span id="enviado"></span>
+                    <button type="submit" class="js-btn-adopt" >Adopt</button></td>
                 </form>
                 
             </div>

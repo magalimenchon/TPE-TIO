@@ -22,5 +22,11 @@
             $query->execute(array($id_pet));
             return $query->fetchAll(PDO::FETCH_OBJ);
         }
+
+        function deletePet($id)
+        {
+            $query = $this->db->prepare('DELETE FROM pet WHERE id=?');
+            $query->execute(array($id));
+        }
         
     }

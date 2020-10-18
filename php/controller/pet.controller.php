@@ -25,4 +25,11 @@
             $this->view->renderInfo($pets, $pet);
         }
 
+        function deletePet($params= null)
+        {
+            $id=$params[':ID'];
+            $this->model->deletePet($id);
+            header('location:'.BASE_URL);
+        }
+
     }
