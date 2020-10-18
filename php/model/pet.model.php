@@ -16,5 +16,11 @@
             $query->execute();
             return $query->fetchAll(PDO::FETCH_OBJ);
         }
+
+        function getPet($id_pet = null) {
+            $query = $this->db->prepare('SELECT * FROM pet WHERE id=?');
+            $query->execute(array($id_pet));
+            return $query->fetchAll(PDO::FETCH_OBJ);
+        }
         
     }

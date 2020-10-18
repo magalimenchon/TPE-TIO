@@ -8,6 +8,8 @@
     $r = new Router();
 
     $r->addRoute('home', 'GET', 'PetController', 'getHome');
+    
+    $r->addRoute('info/:ID', 'GET', 'PetController', 'getInfo');
 
     $r->setDefaultRoute('PetController', 'getHome');
     

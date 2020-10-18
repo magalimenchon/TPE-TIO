@@ -1,0 +1,31 @@
+.pet-list-section {
+    width: 70%;
+    min-height: 100vh;
+    /*
+    overflow-y: scroll;
+    */
+}
+    .pet-list-section table {
+        width: 100%;   
+        margin-right: 2em;
+    }
+        .pet-list-section table tr{
+            width: 100%;   
+            text-align: center;
+        }
+        .pet-list-section table tr:hover{
+            box-shadow: inset 13px 0 0 0 green;
+        }
+                .pet-list-section table button{
+                    width: 80%;
+                    height: 40px;
+                    background: none;
+                    border: 1px solid blueviolet;
+                    border-radius: 20px;
+                    color: blueviolet;
+                }
+                .pet-list-section table button:hover{
+                    background: blueviolet;
+                    border: none;
+                    color: white;
+                }

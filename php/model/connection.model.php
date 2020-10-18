@@ -11,9 +11,9 @@
             $password = '';
             try {
                 $pdo = new PDO( 'mysql:'.$host.$dbname, $user, $password );
-                echo 'Successful connection.';
+            //    echo 'Successful connection.';
             } catch ( PDOException $exc ) {
-                echo 'Connection error: '.$exc ->getMessage();
+            //    echo 'Connection error: '.$exc ->getMessage();
             }
             $this->db = $pdo;
         }

@@ -12,9 +12,17 @@
             $this->smarty = new Smarty();
         }
 
-        function renderHome() {
+        function renderHome($pets) {
             $this->smarty->assign('title', $this->title);
+            $this->smarty->assign('pets', $pets);
             $this->smarty->display('templates/index.tpl');
+        }
+
+        function renderInfo($pets, $pet) {
+            $this->smarty->assign('title', $this->title);
+            $this->smarty->assign('pets', $pets);
+            $this->smarty->assign('petDB', $pet);
+            $this->smarty->display('templates/index.info.tpl');
         }
 
         function showHomeLocation(){
