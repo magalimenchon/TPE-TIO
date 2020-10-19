@@ -25,6 +25,11 @@
             $this->smarty->display('templates/index.info.tpl');
         }
 
+        function renderAbout() {
+            $this->smarty->assign('title', 'About');
+            $this->smarty->display('templates/about.tpl');
+        }
+
         function showHomeLocation(){
             header('Location:'.BASE_URL);
         }

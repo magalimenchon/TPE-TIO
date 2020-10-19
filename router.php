@@ -16,6 +16,8 @@
 
     $r->addRoute('delete/:ID','GET','PetController','deletePet');
 
+    $r->addRoute('about','GET','PetController','getAbout');
+
     $r->setDefaultRoute('PetController', 'getHome');
     
     $r->route($_GET['action'], $_SERVER['REQUEST_METHOD']);
