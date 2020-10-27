@@ -1,6 +1,6 @@
 # Página Adopción de Mascotas 🐾
 
-_Este proyecto corresponde al Trabajo Práctico Especial de la cátedra de Teoría de las Organizaciones_
+_Este proyecto corresponde al Trabajo Práctico Especial de la cátedra de Tecnología de la Información en las Organizaciones_
 _de la carrera de TUDAI - fac. Ciencias Exactas - UNICEN._
 
 ### Pre-requisitos 📋
